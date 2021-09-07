@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { device } from "../constants/device";
 import img from "../assets/images/hero-bg.jpg";
 
 export default function HomePage() {
@@ -16,7 +15,8 @@ export default function HomePage() {
             My Name Is <BoxAnimation />
           </HeroText>
           <HeroText>
-            Nir Gilad<BoxAnimation />
+            Nir Gilad
+            <BoxAnimation />
           </HeroText>
 
           <PortfolioButton href="#" type="button">

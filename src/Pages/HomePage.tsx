@@ -27,14 +27,3 @@ const Container = styled.div`
   min-height: 100vh;
   font-family: ${(props) => props.theme.font};
 `;
-
-const Header = styled.div`
-  background: tomato;
-height 120px;
-`;
-
-const Title = styled.div`
-  justify-content: center;
-  align-items: center;
-  background: pink;
-`;
