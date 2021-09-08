@@ -2,7 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import img from "../assets/images/hero-bg.jpg";
 
-export default function HomePage() {
+const Hero: React.FC = () => {
   return (
     <React.Fragment>
       <HeroContainer>
@@ -26,7 +26,7 @@ export default function HomePage() {
       </HeroContainer>
     </React.Fragment>
   );
-}
+};
 
 const HeroTextWrapper = styled.div`
 max-width: 1200px;
@@ -148,3 +148,4 @@ const BoxAnimation = styled.span`
   animation: ${text_reveal_box} 1s ease;
   animation-delay: 0.5s;
 `;
+export default Hero;

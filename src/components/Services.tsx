@@ -2,7 +2,14 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import serviceImg from "../assets/images/service-item-image.jpg";
 import dataIcon from "../assets/icons/statistics.png";
-export default function HomePage() {
+import {
+  Heading,
+  HeadingSpan,
+  ItemParagraph,
+  ItemTitle,
+} from "../constants/sharedStyles";
+
+const Services: React.FC = () => {
   return (
     <React.Fragment>
       <Container>
@@ -17,9 +24,6 @@ export default function HomePage() {
 
         {
           <Bottom>
-            {/* <Item>
-              <Icon image={icon1Image} />
-            </Item> */}
             <Item>
               <Icon>
                 <IconImage src={dataIcon} />
@@ -36,7 +40,7 @@ export default function HomePage() {
       </Container>
     </React.Fragment>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -48,22 +52,7 @@ const Container = styled.div`
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 100px 0;
-`;
-
-const Heading = styled.div`
-  font-size: 4rem;
-  font-weigh: 300;
-  color: black;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  &:span {
-    color: orange;
-  }
-`;
-const HeadingSpan = styled.span`
-  color: ${(props) => props.theme.mainColor};
+  padding: 10px 0;
 `;
 
 const HeadingParagraph = styled.p`
@@ -77,7 +66,7 @@ const HeadingParagraph = styled.p`
 
 const Bottom = styled.div`
   flex-wrap: wrap;
-  margin-top:50px;
+  margin-top: 50px;
 `;
 const Item = styled.div`
   flex-basis: 80%;
@@ -100,21 +89,10 @@ const Item = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: orange;
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: 0.5;
     z-index: -1;
   }
-`;
-const ItemTitle = styled.div`
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-`;
-
-const ItemParagraph = styled.p`
-  color: white;
-  text-align: left;
 `;
 
 const Icon = styled.div`
@@ -132,3 +110,5 @@ const IconImage = styled.img`
 IconImage.defaultProps = {
   src: "",
 };
+
+export default Services;
