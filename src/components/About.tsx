@@ -52,7 +52,7 @@ const Container = styled.div`
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0px;
+  padding: 50px 0px;
 `;
 
 const LeftContent = styled.div`
