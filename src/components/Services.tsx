@@ -1,13 +1,18 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import serviceImg from "../assets/images/service-item-image.jpg";
 import dataIcon from "../assets/icons/statistics.png";
+
 import {
   Heading,
   HeadingSpan,
+  HeadingParagraph,
+} from "../constants/SharedStyles/Heading";
+import {
   ItemParagraph,
+  ItemSubTitle,
   ItemTitle,
-} from "../constants/sharedStyles";
+} from "../constants/SharedStyles/Item";
 
 const Services: React.FC = () => {
   return (
@@ -29,6 +34,7 @@ const Services: React.FC = () => {
                 <IconImage src={dataIcon} />
               </Icon>
               <ItemTitle>Web Design</ItemTitle>
+              <ItemSubTitle>ggg</ItemSubTitle>
               <ItemParagraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -53,15 +59,6 @@ const Container = styled.div`
   max-width: 1500px;
   margin: 0 auto;
   padding: 10px 0;
-`;
-
-const HeadingParagraph = styled.p`
-  font-size: 1.4rem;
-  font-weight: 200;
-  margin-top: 5px;
-  line-height: 2.5rem;
-  letter-spacing: 0.05re;
-  color: grey;
 `;
 
 const Bottom = styled.div`

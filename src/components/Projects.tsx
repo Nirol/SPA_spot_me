@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
 import {
-  Heading,
-  HeadingSpan,
   ItemParagraph,
+  ItemSubTitle,
   ItemTitle,
-} from "../constants/sharedStyles";
+} from "../constants/SharedStyles/Item";
 import serviceImg from "../assets/images/service-item-image.jpg";
 const Projects: React.FC = () => {
   return (
@@ -99,12 +99,6 @@ const ProjectInfo = styled.div`
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-`;
-const ItemSubTitle = styled.div`
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-top: 10px;
-  color: white;
 `;
 
 const ProjectImageWrap = styled.div`

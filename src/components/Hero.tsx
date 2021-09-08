@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import img from "../assets/images/hero-bg.jpg";
+import { CTAButton } from "../constants/SharedStyles/Button";
 
 const Hero: React.FC = () => {
   return (
@@ -19,9 +20,9 @@ const Hero: React.FC = () => {
             <BoxAnimation />
           </HeroText>
 
-          <PortfolioButton href="#" type="button">
+          <CTAButton href="#" type="button">
             Portfolio
-          </PortfolioButton>
+          </CTAButton>
         </HeroTextWrapper>
       </HeroContainer>
     </React.Fragment>
@@ -56,26 +57,6 @@ const HeroContainer = styled.div`
     background-color: black;
     opacity: 0.2;
     z-index: -1;
-  }
-`;
-
-const PortfolioButton = styled.a`
-  display: inline-block;
-  padding: 10px 30px;
-
-  text-decoration: none;
-  color: ${(props) => props.theme.mainColor};
-  border: 2px solid ${(props) => props.theme.mainColor};
-  background-color: transparent;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 30px;
-  transition: 0.3s ease background-color;
-  transition-property: background-color, color;
-  &:hover {
-    color: white;
-    background-color: ${(props) => props.theme.mainColor};
   }
 `;
 

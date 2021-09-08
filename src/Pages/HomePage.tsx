@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
+import About from "../components/About";
 import HeroPage from "../components/Hero";
 import Projects from "../components/Projects";
 import Services from "../components/Services";
@@ -10,14 +11,10 @@ export default function HomePage() {
   return (
     <ThemeProvider theme={mainTheme}>
       <Container>
-        {/* <Header>
-          <Title>
-            <h1>Option 1 for styled homepage</h1>
-          </Title>
-        </Header> */}
         <HeroPage />
         <Services />
         <Projects />
+        <About />
       </Container>
     </ThemeProvider>
   );
