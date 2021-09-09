@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import img from "../assets/images/hero-bg.jpg";
+import { device } from "../constants/device";
 import { CTAButton } from "../constants/SharedStyles/Button";
 
 const Hero: React.FC = () => {
@@ -104,6 +105,10 @@ const HeroText = styled.h1`
   }
   &:nth-child(3) span {
     animation-delay: 3s;
+  }
+
+  @media ${device.tablet} {
+    font-size: 6rem;
   }
 `;
 

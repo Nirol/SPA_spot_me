@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../device";
 
 export const CTAButton = styled.a`
   display: inline-block;
@@ -11,11 +12,16 @@ export const CTAButton = styled.a`
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin-top: 30px;
+  margin: 30px 0px;
   transition: 0.3s ease background-color;
   transition-property: background-color, color;
   &:hover {
     color: white;
     background-color: ${(props) => props.theme.mainColor};
+  }
+
+  @media ${device.tablet} {
+    font-size: 2.5rem;
+    padding: 20px 60px;
   }
 `;

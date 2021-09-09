@@ -1,7 +1,7 @@
 import styled from "styled-components";
-
+import { device } from "../device";
 export const Heading = styled.div`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weigh: 300;
   color: black;
   margin-bottom: 10px;
@@ -9,6 +9,10 @@ export const Heading = styled.div`
   letter-spacing: 0.2rem;
   &:span {
     color: orange;
+  }
+
+  @media ${device.tablet} {
+    font-size: 6rem;
   }
 `;
 export const HeadingSpan = styled.span`

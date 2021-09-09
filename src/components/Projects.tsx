@@ -7,6 +7,7 @@ import {
   ItemTitle,
 } from "../constants/SharedStyles/Item";
 import serviceImg from "../assets/images/service-item-image.jpg";
+import { device } from "../constants/device";
 const Projects: React.FC = () => {
   return (
     <React.Fragment>
@@ -25,7 +26,7 @@ const Projects: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap></ProjectImageWrap>
+            <ProjectImageWrap />
           </ProjectItem>
 
           <ProjectItem>
@@ -38,7 +39,7 @@ const Projects: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap></ProjectImageWrap>
+            <ProjectImageWrap />
           </ProjectItem>
 
           <ProjectItem>
@@ -51,7 +52,7 @@ const Projects: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap></ProjectImageWrap>
+            <ProjectImageWrap />
           </ProjectItem>
         </AllProjects>
       </Container>
@@ -77,6 +78,9 @@ const AllProjects = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media ${device.tablet} {
+    height: 100%;
+  }
 `;
 
 const ProjectItem = styled.div`
@@ -88,7 +92,18 @@ const ProjectItem = styled.div`
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
-  height: 100%;
+
+
+  @media ${device.tablet} {
+    max-height: 250px;
+
+    margin 0;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: row;
+
+
+  }
 `;
 const ProjectInfo = styled.div`
   padding: 30px;
@@ -99,6 +114,10 @@ const ProjectInfo = styled.div`
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+  @media ${device.tablet} {
+    height: 100%;
+  }
 `;
 
 const ProjectImageWrap = styled.div`
@@ -108,6 +127,7 @@ const ProjectImageWrap = styled.div`
   background-image: url(${serviceImg});
   background-size: cover;
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -123,6 +143,10 @@ const ProjectImageWrap = styled.div`
   &:hover {
     transform: scale(1.1);
     transition: 0.3s ease transform;
+  }
+  @media ${device.tablet} {
+    height: 100%;
+    width: 50%;
   }
 `;
 

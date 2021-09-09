@@ -11,6 +11,7 @@ import { ItemSubTitle } from "../constants/SharedStyles/Item";
 import { CTAButton } from "../constants/SharedStyles/Button";
 
 import aboutImage from "../assets/images/btc-waifu-white.jpeg";
+import { device } from "../constants/device";
 const About: React.FC = () => {
   return (
     <React.Fragment>
@@ -52,7 +53,11 @@ const Container = styled.div`
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0px;
+  padding: 10px 0px;
+
+  @media ${device.tablet} {
+    flex-direction: row;
+  }
 `;
 
 const LeftContent = styled.div`
@@ -60,6 +65,12 @@ const LeftContent = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
+
+  @media ${device.tablet} {
+    padding-left: 40px;
+    width: 600px;
+    height: 400px;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -93,6 +104,11 @@ AboutImage.defaultProps = {
 
 const RightContent = styled.div`
   width: 100%;
+
+  @media ${device.tablet} {
+    text-align: left;
+    padding: 0px 30px;
+  }
 `;
 
 const AboutCTABUTTON = styled(CTAButton)`

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
 import { ItemParagraph, ItemSubTitle } from "../constants/SharedStyles/Item";
 import dataIcon from "../assets/icons/statistics.png";
+import { device } from "../constants/device";
 
 const ContactInfo: React.FC = () => {
   return (
@@ -20,6 +21,27 @@ const ContactInfo: React.FC = () => {
             <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
             <ContactDetails>+972-523960717</ContactDetails>
           </ContactItem>
+          <ContactItem>
+            <ContactIcon>
+              <ContactIconImage src={dataIcon} />
+            </ContactIcon>
+            <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
+            <ContactDetails>+972-523960717</ContactDetails>
+          </ContactItem>
+          <ContactItem>
+            <ContactIcon>
+              <ContactIconImage src={dataIcon} />
+            </ContactIcon>
+            <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
+            <ContactDetails>+972-523960717</ContactDetails>
+          </ContactItem>
+          <ContactItem>
+            <ContactIcon>
+              <ContactIconImage src={dataIcon} />
+            </ContactIcon>
+            <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
+            <ContactDetails>+972-523960717</ContactDetails>
+          </ContactItem>
         </ContactItems>
       </Container>
     </React.Fragment>
@@ -28,7 +50,7 @@ const ContactInfo: React.FC = () => {
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
+  width: 90%;
   min-height: 100vh;
   text-align: center;
   flex-direction: column;
@@ -36,27 +58,49 @@ const Container = styled.div`
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+
+  @media ${device.tablet} {
+    flex-direction: column;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+  }
 `;
 
 const ContactItems = styled.div`
-  width: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  @media ${device.tablet} {
+    flex-basis: 37%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 20px;
+  }
 `;
 
 const ContactItem = styled.div`
   width: 80%;
   padding-top: 10px;
   padding-bottom: 30px;
-
   border-radius: 10px;
   margin: 30px;
+  display: flex;
+
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 18px 0px #0000002c;
   flex-direction: column;
-
+  text-align: center;
   &:hover {
     box-shadow: 0px 0px 55px 0px #0000002c;
     transition: 0.3s ease box-shadow;
+  }
+  @media ${device.tablet} {
+    margin: 20px;
+    flex-basis: 37%;
   }
 `;
 
