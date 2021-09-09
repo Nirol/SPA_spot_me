@@ -2,6 +2,7 @@ import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import About from "../components/About";
 import ContactInfo from "../components/ContactInfo";
+import Footer from "../components/Footer";
 import HeroPage from "../components/Hero";
 import Projects from "../components/Projects";
 import Services from "../components/Services";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Projects />
         <About />
         <ContactInfo />
+        <Footer />
       </Container>
     </ThemeProvider>
   );
