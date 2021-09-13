@@ -1,13 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
+import React from 'react';
+import styled from 'styled-components';
+import { Heading, HeadingSpan } from '../constants/SharedStyles/Heading';
 import {
   ItemParagraph,
   ItemSubTitle,
   ItemTitle,
-} from "../constants/SharedStyles/Item";
-import serviceImg from "../assets/images/service-item-image.jpg";
-import { device } from "../constants/device";
+  IconImage,
+} from '../constants/SharedStyles/Item';
+import serviceImg from '../assets/images/service-item-image.jpg';
+import { device } from '../constants/device';
 const Projects: React.FC = () => {
   return (
     <React.Fragment>
@@ -26,7 +27,9 @@ const Projects: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap />
+            <ProjectImageWrap>
+              <ProjectImage src={serviceImg} />
+            </ProjectImageWrap>
           </ProjectItem>
 
           <ProjectItem>
@@ -39,7 +42,9 @@ const Projects: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap />
+            <ProjectImageWrap>
+              <ProjectImage src={serviceImg} />
+            </ProjectImageWrap>
           </ProjectItem>
 
           <ProjectItem>
@@ -52,7 +57,9 @@ const Projects: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap />
+            <ProjectImageWrap>
+              <ProjectImage src={serviceImg} />
+            </ProjectImageWrap>
           </ProjectItem>
         </AllProjects>
       </Container>
@@ -78,9 +85,6 @@ const AllProjects = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  @media ${device.tablet} {
-    height: 100%;
-  }
 `;
 
 const ProjectItem = styled.div`
@@ -98,9 +102,11 @@ const ProjectItem = styled.div`
     max-height: 250px;
 
     margin 0;
-    width: 100%;
+    width: 95%;
     border-radius: 0;
     flex-direction: row;
+    border: solid 1px black;
+
 
 
   }
@@ -116,7 +122,7 @@ const ProjectInfo = styled.div`
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
 
   @media ${device.tablet} {
-    height: 100%;
+    border: solid 1px black;
   }
 `;
 
@@ -124,13 +130,17 @@ const ProjectImageWrap = styled.div`
   flex-basis: 50%;
   width: 100%;
   min-height: 300px;
-  background-image: url(${serviceImg});
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
 
+  @media ${device.tablet} {
+  }
+`;
+
+const ProjectImage = styled.img`
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -144,10 +154,9 @@ const ProjectImageWrap = styled.div`
     transform: scale(1.1);
     transition: 0.3s ease transform;
   }
-  @media ${device.tablet} {
-    height: 100%;
-    width: 50%;
-  }
 `;
+ProjectImage.defaultProps = {
+  src: '',
+};
 
 export default Projects;
