@@ -58,10 +58,10 @@ const Container = styled.div`
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-
+  padding: 100px 0;
   @media ${device.tablet} {
     flex-direction: column;
-    padding: 100px 0;
+
     justify-content: center;
     align-items: center;
     min-height: 20vh;
