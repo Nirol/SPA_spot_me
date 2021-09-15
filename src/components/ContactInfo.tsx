@@ -61,7 +61,7 @@ const Container = styled.div`
   padding: 100px 0;
   @media ${device.tablet} {
     flex-direction: column;
-
+    padding: 50px 0;
     justify-content: center;
     align-items: center;
     min-height: 20vh;
@@ -115,8 +115,8 @@ const ContactIconImage = styled.img`
 
 const ContactDetails = styled(ItemParagraph)`
   color: black;
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.2rem;

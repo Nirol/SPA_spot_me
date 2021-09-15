@@ -58,6 +58,7 @@ const Container = styled.div`
   @media ${device.tablet} {
     flex-direction: row;
     min-height: 40vh;
+    margin-top: 20px;
   }
 `;
 

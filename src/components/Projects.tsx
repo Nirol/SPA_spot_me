@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Heading, HeadingSpan } from '../constants/SharedStyles/Heading';
+import React from "react";
+import styled from "styled-components";
+import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
 import {
   ItemParagraph,
   ItemSubTitle,
   ItemTitle,
   IconImage,
-} from '../constants/SharedStyles/Item';
-import serviceImg from '../assets/images/service-item-image.jpg';
-import { device } from '../constants/device';
+} from "../constants/SharedStyles/Item";
+import serviceImg from "../assets/images/service-item-image.jpg";
+import { device } from "../constants/device";
 const Projects: React.FC = () => {
   return (
     <React.Fragment>
@@ -96,19 +96,23 @@ const ProjectItem = styled.div`
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
-
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
 
   @media ${device.tablet} {
     max-height: 250px;
-
     margin 0;
     width: 95%;
     border-radius: 0;
     flex-direction: row;
-    border: solid 1px black;
-
-
-
+    width: 100%;
+    border: solid 1px white;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  @media ${device.laptop} {
+    max-height: 300px;
+    margin: 0 auto;      
   }
 `;
 const ProjectInfo = styled.div`
@@ -119,10 +123,11 @@ const ProjectInfo = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
 
   @media ${device.tablet} {
-    border: solid 1px black;
+  }
+
+  @media ${device.laptop} {
   }
 `;
 
@@ -132,6 +137,7 @@ const ProjectImageWrap = styled.div`
   min-height: 300px;
 
   @media ${device.tablet} {
+    border: solid 1px white;
   }
 `;
 
@@ -140,7 +146,7 @@ const ProjectImage = styled.img`
   min-height: 300px;
   object-fit: cover;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -156,7 +162,7 @@ const ProjectImage = styled.img`
   }
 `;
 ProjectImage.defaultProps = {
-  src: '',
+  src: "",
 };
 
 export default Projects;
