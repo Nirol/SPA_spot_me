@@ -6,27 +6,25 @@ import { CTAButton } from "../constants/SharedStyles/Button";
 
 const Hero: React.FC = () => {
   return (
-    <React.Fragment>
-      <HeroContainer>
-        <HeroTextWrapper>
-          <HeroText>
-            Hello, <BoxAnimation />
-          </HeroText>
+    <HeroContainer>
+      <HeroTextWrapper>
+        <HeroText>
+          Hello, <BoxAnimation />
+        </HeroText>
 
-          <HeroText>
-            My Name Is <BoxAnimation />
-          </HeroText>
-          <HeroText>
-            Nir Gilad
-            <BoxAnimation />
-          </HeroText>
+        <HeroText>
+          My Name Is <BoxAnimation />
+        </HeroText>
+        <HeroText>
+          Nir Gilad
+          <BoxAnimation />
+        </HeroText>
 
-          <CTAButton href="#" type="button">
-            Portfolio
-          </CTAButton>
-        </HeroTextWrapper>
-      </HeroContainer>
-    </React.Fragment>
+        <CTAButton href="#projects" type="button">
+          Portfolio
+        </CTAButton>
+      </HeroTextWrapper>
+    </HeroContainer>
   );
 };
 
@@ -38,16 +36,18 @@ justify-content: flex-start;
 `;
 
 const HeroContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-image: url(${img});
   background-size: cover;
   background-position: top center;
   position: relative;
   z-index: 1;
+
   &::after {
     content: "";
     position: absolute;
@@ -79,7 +79,7 @@ function text_reveal_name_animation(props: any) {
 const HeroText = styled.h1`
   display: block;
   width: fit-content;
-  font-size: 4rem;
+  font-size: 2.5rem;
   position: relative;
   color: transparent;
   animation: ${text_reveal} 0.5s ease forwards;

@@ -78,6 +78,7 @@ const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 0;
+  margin-top: 50px;
 `;
 
 const AllProjects = styled.div`
@@ -123,12 +124,6 @@ const ProjectInfo = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-
-  @media ${device.tablet} {
-  }
-
-  @media ${device.laptop} {
-  }
 `;
 
 const ProjectImageWrap = styled.div`

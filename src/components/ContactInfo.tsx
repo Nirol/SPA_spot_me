@@ -59,6 +59,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 100px 0;
+
   @media ${device.tablet} {
     flex-direction: column;
     padding: 50px 0;
@@ -72,11 +73,13 @@ const ContactItems = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
   @media ${device.tablet} {
     flex-basis: 37%;
     display: flex;
     flex-direction: row;
     margin: 0;
+    margin-top: 50px;
     padding-left: 20px;
   }
 `;
