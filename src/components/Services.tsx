@@ -14,6 +14,7 @@ import {
   ItemParagraph,
   ItemSubTitle,
   ItemTitle,
+  Item,
 } from "../constants/SharedStyles/Item";
 import { device } from "../constants/device";
 
@@ -32,7 +33,7 @@ const Services: React.FC = () => {
           </HeadingParagraph>
         </Top>
         <Bottom>
-          <Item>
+          <ItemWithBackground>
             <Icon>
               <IconImage src={dataIcon} />
             </Icon>
@@ -43,8 +44,8 @@ const Services: React.FC = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco
             </ItemParagraph>
-          </Item>
-          <Item>
+          </ItemWithBackground>
+          <ItemWithBackground>
             <Icon>
               <IconImage src={dataIcon} />
             </Icon>
@@ -55,9 +56,9 @@ const Services: React.FC = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco
             </ItemParagraph>
-          </Item>
+          </ItemWithBackground>
 
-          <Item>
+          <ItemWithBackground>
             <Icon>
               <IconImage src={dataIcon} />
             </Icon>
@@ -68,7 +69,7 @@ const Services: React.FC = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco
             </ItemParagraph>
-          </Item>
+          </ItemWithBackground>
         </Bottom>
       </Container>
     </React.Fragment>
@@ -108,37 +109,8 @@ const Bottom = styled.div`
     margin: 1.5%;
   }
 `;
-const Item = styled.div`
-  flex-basis: 70%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
+const ItemWithBackground = styled(Item)`
   background-image: url(${serviceImg});
-  background-size: cover;
-  margin: 10px 5%;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  box-shadow: 0px 0px 18px 0px black;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.5;
-    z-index: -1;
-  }
-
-  @media ${device.tablet} {
-    flex-basis: 37%;
-    margin: 1.5%;
-  }
 `;
 
 export default Services;

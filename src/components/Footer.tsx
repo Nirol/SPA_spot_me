@@ -15,24 +15,6 @@ const Footer: React.FC = () => {
           <HeadingSpan>N</HeadingSpan>ir Gil<HeadingSpan>a</HeadingSpan>d
         </ItemTitle>
         <FooterSubTitle>Solutions! All Around</FooterSubTitle>
-        <SocialItems>
-          <SocialLink href="http://www.ynet.co.il" target="_blank">
-            <SocialIcon src="https://img.icons8.com/bubbles/100/000000/behance.png" />
-          </SocialLink>
-          <SocialLink href="http://www.gmail.com" target="_blank">
-            <SocialIcon
-              src={"https://img.icons8.com/bubbles/100/000000/new-post.png"}
-            />
-          </SocialLink>
-          <SocialLink href="http://www.twitter.com" target="_blank">
-            <SocialIcon
-              src={"https://img.icons8.com/bubbles/100/000000/twitter.png"}
-            />
-          </SocialLink>
-          <SocialLink href="http://www.facebook.com" target="_blank">
-            <SocialIcon src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" />
-          </SocialLink>
-        </SocialItems>
         <FooterParagraph>
           Copyright © 2021 Nir Gilad. All rights reserved
         </FooterParagraph>
@@ -54,7 +36,7 @@ const Container = styled.div`
 
   margin: 0 auto;
   border: solid 1px black;
-  box-shadow: 10px 10px 18px 10px #0000002c;
+  box-shadow: 5px 5px 5px black;
   background: transparent;
 `;
 

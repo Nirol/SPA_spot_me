@@ -1,0 +1,32 @@
+import styled from "styled-components";
+import { device } from "../device";
+export const ProjectImageWrap = styled.div`
+  width: 100%;
+  min-height: 100px;
+  max-width: 550px;
+  @media ${device.tablet} {
+    border: solid 1px black;
+    max-width: 400px;
+  }
+`;
+
+export const ProjectImage = styled.img`
+  width: 100%;
+
+  object-fit: contain;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease transform;
+  }
+`;

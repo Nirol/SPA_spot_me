@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import { mainTheme } from "./constants/cssThemes";
 import Header from "./components/Header";
+import Thesis from "./components/Thesis";
 
 function App() {
   const { pathname, hash } = useLocation();
@@ -45,6 +46,10 @@ function App() {
           <Projects />
         </section>
 
+        <section style={{ scrollMarginTop: "100px" }} id="thesis">
+          <Thesis />
+        </section>
+
         <section style={{ scrollMarginTop: "100px" }} id="about-me">
           <About />
         </section>
@@ -64,8 +69,8 @@ const Container = styled.div`
   font-family: ${(props) => props.theme.font};
   scroll-behavior: smooth;
 
-  background-color #55efc4;
-  background-image linear-gradient(315deg, #55efc4 0%, #000000 74%);
+  background-color black;
+  background-image linear-gradient(315deg, #078763 0%, #000000 90%);
 `;
 
 export default App;

@@ -64,7 +64,7 @@ const BurgerBar = styled.div<{ BurgerState: string }>`
   height: 2px;
   width: 30px;
   position: relative;
-  color: ${(props) => props.theme.mainTextBrightColor};
+  background-color: ${(props) => props.theme.mainTextBrightColor};
   z-index: -1;
 
   &::after,
@@ -74,7 +74,7 @@ const BurgerBar = styled.div<{ BurgerState: string }>`
     height: 100%;
     width: 100%;
     left: 0;
-    color: ${(props) => props.theme.mainTextBrightColor};
+    background-color: ${(props) => props.theme.mainTextBrightColor};
     transition: 0.4s ease;
     transition-property: top, bottom;
   }

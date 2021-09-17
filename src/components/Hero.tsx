@@ -9,11 +9,11 @@ const Hero: React.FC = () => {
     <HeroContainer>
       <HeroTextWrapper>
         <HeroText>
-          Hello, <BoxAnimation />
+          Solutions, <BoxAnimation />
         </HeroText>
 
         <HeroText>
-          My Name Is <BoxAnimation />
+          All Around!. <BoxAnimation />
         </HeroText>
         <HeroText>
           Nir Gilad

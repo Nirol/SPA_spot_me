@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import backgroundImage from "../assets/images/item_backgrounds/bb6.jpeg";
 import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
 import { ItemParagraph, ItemSubTitle } from "../constants/SharedStyles/Item";
 import linkedin from "../assets/icons/linkedin.png";
@@ -23,7 +23,12 @@ const ContactInfo: React.FC = () => {
             </ContactIcon>
             <ContactSubTitle>Linkedin</ContactSubTitle>
             <ContactDetails>
-              <a href="https://www.linkedin.com/in/giladnir">giladnir</a>
+              <a
+                style={{ textDecoration: "underline", color: "white" }}
+                href="https://www.linkedin.com/in/giladnir"
+              >
+                gilad nir
+              </a>
             </ContactDetails>
           </ContactItem>
           <ContactItem>
@@ -67,47 +72,45 @@ const Container = styled.div`
 
   @media ${device.tablet} {
     flex-direction: column;
-    padding: 50px 0;
-    justify-content: center;
-    align-items: center;
     min-height: 20vh;
+    padding: 0;
   }
 `;
 
 const ContactItems = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  flex-wrap: wrap;
   @media ${device.tablet} {
-    flex-basis: 37%;
-    display: flex;
     flex-direction: row;
-    margin: 0;
-    margin-top: 50px;
-    padding-left: 20px;
+    flex-basis: 37%;
+    margin: 1.5%;
+    margin-top: 20px;
   }
 `;
 
 const ContactItem = styled.div`
-  width: 80%;
   padding-top: 10px;
   padding-bottom: 30px;
   border-radius: 10px;
-  margin: 30px;
+  margin: 20px;
   display: flex;
 
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 18px 10px #0000002c;
+  box-shadow: 0px 0px 18px 0px black;
   flex-direction: column;
   text-align: center;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
   &:hover {
     box-shadow: 10px 0px 55px 0px #0000002c;
     transition: 0.3s ease box-shadow;
   }
   @media ${device.tablet} {
-    margin: 20px;
     flex-basis: 37%;
   }
 `;

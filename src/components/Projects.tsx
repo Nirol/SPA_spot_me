@@ -7,6 +7,10 @@ import {
   ItemTitle,
   IconImage,
 } from "../constants/SharedStyles/Item";
+import {
+  ProjectImageWrap,
+  ProjectImage,
+} from "../constants/SharedStyles/Images";
 import serviceImg from "../assets/images/item_backgrounds/bb1.png";
 import { device } from "../constants/device";
 const Projects: React.FC = () => {
@@ -126,39 +130,5 @@ const ProjectInfo = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
-
-const ProjectImageWrap = styled.div`
-  flex-basis: 50%;
-  width: 100%;
-  min-height: 300px;
-
-  @media ${device.tablet} {
-    border: solid 1px black;
-  }
-`;
-
-const ProjectImage = styled.img`
-  width: 100%;
-  min-height: 300px;
-  object-fit: cover;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-    opacity: 0.5;
-  }
-
-  &:hover {
-    transform: scale(1.1);
-    transition: 0.3s ease transform;
-  }
-`;
-ProjectImage.defaultProps = {
-  src: "",
-};
 
 export default Projects;

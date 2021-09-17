@@ -64,6 +64,16 @@ const Header: React.FC = () => {
                   Projects
                 </Link>
               </ListItem>
+
+              <ListItem>
+                <Link
+                  onClick={switchMenuState}
+                  href="#thesis"
+                  linkText={"Thesis"}
+                >
+                  Thesis
+                </Link>
+              </ListItem>
               <ListItem>
                 <Link
                   onClick={switchMenuState}
@@ -125,7 +135,7 @@ const NavList = styled.div``;
 const LinkList = styled.ul<{ leftAttribute: string }>`
   list-style: none;
   position: absolute;
-  background-color: ${(props) => props.theme.gradientBackground};
+  background: ${(props) => props.theme.gradientBackground};
   width: 100vw;
   height: 100vh;
   left: ${({ leftAttribute }) => leftAttribute};
