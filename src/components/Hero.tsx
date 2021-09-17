@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import img from "../assets/images/hero-bg.jpg";
+import backgroundImage from "../assets/images/b2.jpeg";
 import { device } from "../constants/device";
 import { CTAButton } from "../constants/SharedStyles/Button";
 
@@ -42,7 +42,7 @@ const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-image: url(${img});
+  background-image: url(${backgroundImage});
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -55,12 +55,11 @@ const HeroContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background: ${(props) => props.theme.mainTextDarkColor};
     opacity: 0.2;
     z-index: -1;
   }
 `;
-
 const text_reveal = keyframes`
   100% {
 color: white;

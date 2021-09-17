@@ -5,7 +5,7 @@ import { HeadingSpan } from "../constants/SharedStyles/Heading";
 import { ItemTitle } from "../constants/SharedStyles/Item";
 import Burger from "./Burger";
 
-const BACKGROUND = "rgba(31, 30, 30)";
+const BACKGROUND = "linear-gradient(60deg, #29323c 0%, #485563 100%)";
 const TRANSPARENT_BACKGROUND = "rgba(31, 30, 30, 0.5)";
 
 const Header: React.FC = () => {
@@ -125,7 +125,7 @@ const NavList = styled.div``;
 const LinkList = styled.ul<{ leftAttribute: string }>`
   list-style: none;
   position: absolute;
-  background-color: rgb(31, 30, 30);
+  background-color: ${(props) => props.theme.gradientBackground};
   width: 100vw;
   height: 100vh;
   left: ${({ leftAttribute }) => leftAttribute};
@@ -175,7 +175,7 @@ const Link = styled.a<{ linkText: string }>`
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-decoration: none;
-  color: white;
+  color: ${(props) => props.theme.mainTextBrightColor};
   text-transform: uppercase;
   padding-top: 10px;
   margin-right: 35px;

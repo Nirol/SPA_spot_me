@@ -10,7 +10,7 @@ import { ItemSubTitle } from "../constants/SharedStyles/Item";
 
 import { CTAButton } from "../constants/SharedStyles/Button";
 
-import aboutImage from "../assets/images/btc-waifu-white.jpeg";
+import aboutImage from "../assets/images/profile-gray.png";
 import { device } from "../constants/device";
 const About: React.FC = () => {
   return (
@@ -26,18 +26,16 @@ const About: React.FC = () => {
           <Heading>
             Abo<HeadingSpan>u</HeadingSpan>t <HeadingSpan>me</HeadingSpan>
           </Heading>
-          <ItemSubTitle style={{ color: "black" }}>
-            Full Stack & Data scientist
-          </ItemSubTitle>
+          <AboutSubTitle>Full Stack & Data scientist</AboutSubTitle>
           <HeadingParagraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco
           </HeadingParagraph>
 
-          <AboutCTABUTTON href="#" type="button">
+          <AboutCTAButton href="#" type="button">
             Download CV
-          </AboutCTABUTTON>
+          </AboutCTAButton>
         </RightContent>
       </Container>
     </React.Fragment>
@@ -76,11 +74,11 @@ const LeftContent = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  width: 250px;
-  height: 360px;
+  width: 200px;
+  height: 200px;
   position: relative;
-  border: 10px solid white;
-
+  border: 1px solid black;
+  border-radius: 50%;
   &::after {
     content: "";
     position: absolute;
@@ -97,7 +95,8 @@ const ImageWrapper = styled.div`
 const AboutImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
+  border-radius: 50%;
 `;
 
 AboutImage.defaultProps = {
@@ -113,11 +112,15 @@ const RightContent = styled.div`
   }
 `;
 
-const AboutCTABUTTON = styled(CTAButton)`
-  color: black;
+const AboutCTAButton = styled(CTAButton)`
+  color: ${(props) => props.theme.mainTextDarkColor};
   margin-bottom: 30px;
   padding: 10px 20px;
   font-size: 2rem;
+`;
+
+const AboutSubTitle = styled(ItemSubTitle)`
+  color: ${(props) => props.theme.mainTextDarkColor};
 `;
 
 export default About;

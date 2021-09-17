@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import serviceImg from "../assets/images/service-item-image.jpg";
+import serviceImg from "../assets/images/item_backgrounds/bb6.jpeg";
 import dataIcon from "../assets/icons/statistics.png";
 
 import {
@@ -122,7 +122,7 @@ const Item = styled.div`
   position: relative;
   z-index: 1;
   overflow: hidden;
-
+  box-shadow: 0px 0px 18px 0px black;
   &::after {
     content: "";
     position: absolute;
@@ -130,7 +130,7 @@ const Item = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: 0.5;
     z-index: -1;
   }

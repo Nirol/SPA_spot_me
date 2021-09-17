@@ -16,7 +16,7 @@ export const CTAButton = styled.a`
   transition: 0.3s ease background-color;
   transition-property: background-color, color;
   &:hover {
-    color: white;
+    color: ${(props) => props.theme.mainTextDarkColor};
     background-color: ${(props) => props.theme.mainColor};
   }
 

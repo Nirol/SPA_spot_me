@@ -7,7 +7,7 @@ import {
   ItemTitle,
   IconImage,
 } from "../constants/SharedStyles/Item";
-import serviceImg from "../assets/images/service-item-image.jpg";
+import serviceImg from "../assets/images/item_backgrounds/bb1.png";
 import { device } from "../constants/device";
 const Projects: React.FC = () => {
   return (
@@ -97,8 +97,9 @@ const ProjectItem = styled.div`
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-
+  background: rgb(0,36,29);
+  background: linear-gradient(328deg, rgba(0,36,29,0.7847514005602241) 0%, rgba(1,71,57,0.8071603641456583) 47%, rgba(2,103,84,0.8015581232492998) 100%);
+  box-shadow: 0px 0px 10px 0px black;
   @media ${device.tablet} {
     max-height: 250px;
     margin 0;
@@ -106,7 +107,7 @@ const ProjectItem = styled.div`
     border-radius: 0;
     flex-direction: row;
     width: 100%;
-    border: solid 1px white;
+    border: solid 1px black;
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
@@ -132,7 +133,7 @@ const ProjectImageWrap = styled.div`
   min-height: 300px;
 
   @media ${device.tablet} {
-    border: solid 1px white;
+    border: solid 1px black;
   }
 `;
 
@@ -147,7 +148,7 @@ const ProjectImage = styled.img`
     left: 0;
     width: 100%;
     height: 100%;
-    background: pink;
+    background-color: pink;
     opacity: 0.5;
   }
 

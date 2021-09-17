@@ -3,14 +3,11 @@ import { device } from "../device";
 export const Heading = styled.div`
   font-size: 3rem;
   font-weigh: 300;
-  color: black;
+  color: ${(props) => props.theme.mainTextDarkColor};
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  &:span {
-    color: orange;
-  }
-
+  text-shadow: 5px 5px 10px black;
   @media ${device.tablet} {
     font-size: 6rem;
   }
@@ -25,5 +22,5 @@ export const HeadingParagraph = styled.p`
   margin-top: 5px;
   line-height: 2.5rem;
   letter-spacing: 0.05re;
-  color: grey;
+  color: ${(props) => props.theme.mainTextDarkColor};
 `;

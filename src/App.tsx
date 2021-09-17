@@ -63,6 +63,9 @@ function App() {
 const Container = styled.div`
   font-family: ${(props) => props.theme.font};
   scroll-behavior: smooth;
+
+  background-color #55efc4;
+  background-image linear-gradient(315deg, #55efc4 0%, #000000 74%);
 `;
 
 export default App;

@@ -43,33 +43,30 @@ const Footer: React.FC = () => {
 
 const Container = styled.div`
   display: flex;
-  min-height: 500px;
+  min-height: 200px;
   text-align: center;
   flex-direction: column;
   display: flex;
   width: 100%;
-  min-height: 50px;
+  min-height: 20px;
 
   max-width: 1200px;
 
-  padding-top: 10px;
-  padding-bottom: 50px;
-
   margin: 0 auto;
-
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  border: solid 1px black;
+  box-shadow: 10px 10px 18px 10px #0000002c;
+  background: transparent;
 `;
 
 export const SocialItems = styled.div`
   display: flex;
-  margin-bottom: 10px;
   justify-content: center;
   align-items: center;
 `;
 
 export const SocialLink = styled.a`
   display: inline-block;
-  margin: 15px 12px;
+  margin: 0px 5px;
   width: 50px;
   height: 50px;
 `;
@@ -86,12 +83,12 @@ const SocialIcon = styled.img`
 `;
 
 const FooterSubTitle = styled(ItemSubTitle)`
-  margin-top: 5px;
+  margin-top: 0px;
 `;
 
 const FooterParagraph = styled(ItemParagraph)`
   justify-content: center;
-  align-items: center;
+
   text-align: center;
 `;
 

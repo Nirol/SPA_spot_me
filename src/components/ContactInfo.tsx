@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
 import { ItemParagraph, ItemSubTitle } from "../constants/SharedStyles/Item";
-import dataIcon from "../assets/icons/statistics.png";
+import linkedin from "../assets/icons/linkedin.png";
+import addressIcon from "../assets/icons/address.png";
+import telephone from "../assets/icons/telephone.png";
+import email from "../assets/icons/email.png";
 import { device } from "../constants/device";
 
 const ContactInfo: React.FC = () => {
@@ -16,31 +19,33 @@ const ContactInfo: React.FC = () => {
         <ContactItems>
           <ContactItem>
             <ContactIcon>
-              <ContactIconImage src={dataIcon} />
+              <ContactIconImage src={linkedin} />
             </ContactIcon>
-            <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
+            <ContactSubTitle>Linkedin</ContactSubTitle>
+            <ContactDetails>
+              <a href="https://www.linkedin.com/in/giladnir">giladnir</a>
+            </ContactDetails>
+          </ContactItem>
+          <ContactItem>
+            <ContactIcon>
+              <ContactIconImage src={email} />
+            </ContactIcon>
+            <ContactSubTitle>Email</ContactSubTitle>
+            <ContactDetails>nirolgg@gmail.com</ContactDetails>
+          </ContactItem>
+          <ContactItem>
+            <ContactIcon>
+              <ContactIconImage src={telephone} />
+            </ContactIcon>
+            <ContactSubTitle>Phone</ContactSubTitle>
             <ContactDetails>+972-523960717</ContactDetails>
           </ContactItem>
           <ContactItem>
             <ContactIcon>
-              <ContactIconImage src={dataIcon} />
+              <ContactIconImage src={addressIcon} />
             </ContactIcon>
-            <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
-            <ContactDetails>+972-523960717</ContactDetails>
-          </ContactItem>
-          <ContactItem>
-            <ContactIcon>
-              <ContactIconImage src={dataIcon} />
-            </ContactIcon>
-            <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
-            <ContactDetails>+972-523960717</ContactDetails>
-          </ContactItem>
-          <ContactItem>
-            <ContactIcon>
-              <ContactIconImage src={dataIcon} />
-            </ContactIcon>
-            <ItemSubTitle style={{ color: "black" }}>Phone</ItemSubTitle>
-            <ContactDetails>+972-523960717</ContactDetails>
+            <ContactSubTitle>Address</ContactSubTitle>
+            <ContactDetails>Tel-Aviv, Israel</ContactDetails>
           </ContactItem>
         </ContactItems>
       </Container>
@@ -94,11 +99,11 @@ const ContactItem = styled.div`
 
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 18px 0px #0000002c;
+  box-shadow: 10px 10px 18px 10px #0000002c;
   flex-direction: column;
   text-align: center;
   &:hover {
-    box-shadow: 0px 0px 55px 0px #0000002c;
+    box-shadow: 10px 0px 55px 0px #0000002c;
     transition: 0.3s ease box-shadow;
   }
   @media ${device.tablet} {
@@ -117,11 +122,16 @@ const ContactIconImage = styled.img`
 `;
 
 const ContactDetails = styled(ItemParagraph)`
-  color: black;
+  color: ${(props) => props.theme.mainTextDarkColor};
   font-size: 1.1rem;
   line-height: 1.5rem;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.2rem;
 `;
+
+const ContactSubTitle = styled(ItemSubTitle)`
+  color: ${(props) => props.theme.mainTextDarkColor};
+`;
+
 export default ContactInfo;
