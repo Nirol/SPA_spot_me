@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/protfolio_website/static/js/main.53473796.chunk.js",
+    "main.js.map": "/protfolio_website/static/js/main.53473796.chunk.js.map",
+    "runtime-main.js": "/protfolio_website/static/js/runtime-main.8aec0910.js",
+    "runtime-main.js.map": "/protfolio_website/static/js/runtime-main.8aec0910.js.map",
+    "static/js/2.b8a8967e.chunk.js": "/protfolio_website/static/js/2.b8a8967e.chunk.js",
+    "static/js/2.b8a8967e.chunk.js.map": "/protfolio_website/static/js/2.b8a8967e.chunk.js.map",
+    "static/js/3.0082dfce.chunk.js": "/protfolio_website/static/js/3.0082dfce.chunk.js",
+    "static/js/3.0082dfce.chunk.js.map": "/protfolio_website/static/js/3.0082dfce.chunk.js.map",
+    "index.html": "/protfolio_website/index.html",
+    "static/js/2.b8a8967e.chunk.js.LICENSE.txt": "/protfolio_website/static/js/2.b8a8967e.chunk.js.LICENSE.txt",
+    "static/media/btc-waifu-white.30ea52d6.jpeg": "/protfolio_website/static/media/btc-waifu-white.30ea52d6.jpeg",
+    "static/media/hero-bg.78272023.jpg": "/protfolio_website/static/media/hero-bg.78272023.jpg",
+    "static/media/service-item-image.5a1f784b.jpg": "/protfolio_website/static/media/service-item-image.5a1f784b.jpg",
+    "static/media/statistics.9e470bf3.png": "/protfolio_website/static/media/statistics.9e470bf3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8aec0910.js",
+    "static/js/2.b8a8967e.chunk.js",
+    "static/js/main.53473796.chunk.js"
+  ]
+}
