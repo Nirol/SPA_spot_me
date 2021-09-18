@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import backgroundImage from "../assets/images/item_backgrounds/bb6.jpeg";
+import backgroundImage from "../assets/images/item_backgrounds/crimson-grey.png";
 import thesisAlgo from "../assets/thesis/Thesis_algo.png";
 
 import {

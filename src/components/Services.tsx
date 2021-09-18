@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import serviceImg from "../assets/images/item_backgrounds/bb6.jpeg";
+import serviceImg from "../assets/images/item_backgrounds/crimson-grey.png";
 import dataIcon from "../assets/icons/statistics.png";
 
 import {

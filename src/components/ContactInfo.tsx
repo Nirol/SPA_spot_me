@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import backgroundImage from "../assets/images/item_backgrounds/bb6.jpeg";
 import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
 import { ItemParagraph, ItemSubTitle } from "../constants/SharedStyles/Item";
 import linkedin from "../assets/icons/linkedin.png";
