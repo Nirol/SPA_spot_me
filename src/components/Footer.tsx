@@ -53,17 +53,6 @@ export const SocialLink = styled.a`
   height: 50px;
 `;
 
-const SocialIcon = styled.img`
-  width: 50px;
-  height: 50px;
-
-  filter: grayscale(0);
-  transition: 0.3s ease filter;
-  &:hover {
-    filter: grayscale(0);
-  }
-`;
-
 const FooterSubTitle = styled(ItemSubTitle)`
   margin-top: 0px;
 `;

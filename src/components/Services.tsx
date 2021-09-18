@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import serviceImg from "../assets/images/item_backgrounds/crimson-grey.png";
 import dataIcon from "../assets/icons/statistics.png";
 
 import {
@@ -110,7 +109,12 @@ const Bottom = styled.div`
   }
 `;
 const ItemWithBackground = styled(Item)`
-  background-image: url(${serviceImg});
+  background: rgb(41, 50, 60);
+  background: linear-gradient(
+    302deg,
+    rgba(41, 50, 60, 1) 0%,
+    rgba(177, 5, 40, 1) 77%
+  );
 `;
 
 export default Services;
