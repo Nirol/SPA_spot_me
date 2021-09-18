@@ -111,6 +111,7 @@ const ContactItem = styled.div`
   }
   @media ${device.tablet} {
     flex-basis: 37%;
+    max-width: 300px;
   }
 `;
 
