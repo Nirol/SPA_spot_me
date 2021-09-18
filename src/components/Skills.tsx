@@ -75,9 +75,12 @@ const Skills: React.FC = () => {
                 <TagTitle>Other</TagTitle>
                 <TagsRow>
                   <ItemTag>Linux</ItemTag>
-                  <ItemTag>Algorithms </ItemTag>
+
                   <ItemTag>Java </ItemTag>
                   <ItemTag>Java Concurrency</ItemTag>
+                </TagsRow>
+                <TagsRow>
+                  <ItemTag>Algorithms </ItemTag>
                 </TagsRow>
               </ProjectInfo>
             </ProjectItem>
@@ -111,47 +114,32 @@ const ProjectItem = styled.div`
   box-shadow: 0px 0px 18px 0px black;
   align-items: center;
   flex-direction: column;
-  width: 80%;
-
+  width: 90%;
   margin: 20px auto;
-  overflow: hidden;
 
-  background: white;
   background: linear-gradient(315deg, #000000 0%, #485563 20%);
-  box-shadow: 0px 0px 10px 0px black;
+  box-shadow: 5px 5px 5px 5px black;
+
   border-radius: 10%;
+
   @media ${device.tablet} {
-    border-radius: 30px;
-    flex-direction: row;
-    width: 100%;
-    border: solid 1px black;
   }
   @media ${device.laptop} {
-    max-height: 300px;
   }
 `;
 const ProjectInfo = styled.div`
-  padding: 30px;
-  flex-basis: 50%;
-  height: 100%;
+  padding: 0px 15px 15px 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   @media ${device.tablet} {
-    flex-basis: 100%;
-    max-width: 100%;
   }
 `;
 
 const TagTitle = styled.h2`
   font-size: 1.3rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-decoration: underline;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: normal;
 `;
 
@@ -160,9 +148,6 @@ const TagsRow = styled.div`
   flex-direction: row;
 `;
 const ItemTag = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
   height: 100%;
   color: white;
