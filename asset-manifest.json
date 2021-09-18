@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/protfolio_website/static/js/main.d02d886d.chunk.js",
-    "main.js.map": "/protfolio_website/static/js/main.d02d886d.chunk.js.map",
+    "main.js": "/protfolio_website/static/js/main.9a0d97dd.chunk.js",
+    "main.js.map": "/protfolio_website/static/js/main.9a0d97dd.chunk.js.map",
     "runtime-main.js": "/protfolio_website/static/js/runtime-main.8aec0910.js",
     "runtime-main.js.map": "/protfolio_website/static/js/runtime-main.8aec0910.js.map",
     "static/js/2.b8a8967e.chunk.js": "/protfolio_website/static/js/2.b8a8967e.chunk.js",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.8aec0910.js",
     "static/js/2.b8a8967e.chunk.js",
-    "static/js/main.d02d886d.chunk.js"
+    "static/js/main.9a0d97dd.chunk.js"
   ]
 }
