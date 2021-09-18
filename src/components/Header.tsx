@@ -69,6 +69,15 @@ const Header: React.FC = () => {
               <ListItem>
                 <Link
                   onClick={switchMenuState}
+                  href="#skills"
+                  linkText={"Skills"}
+                >
+                  Skills
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link
+                  onClick={switchMenuState}
                   href="#thesis"
                   linkText={"Thesis"}
                 >
