@@ -13,6 +13,7 @@ const Skills: React.FC = () => {
         </Heading>
         <AllProjects>
           <ItemTitle> Fluent </ItemTitle>
+
           <ProjectItems>
             <ProjectItem>
               <ProjectInfo>
@@ -123,16 +124,16 @@ const ProjectItem = styled.div`
   border-radius: 10%;
 
   @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
+    flex-basis: 40%;
+    height: 100%;
+    min-height: 150px;
+    max-width: 300px;
   }
 `;
 const ProjectInfo = styled.div`
   padding: 0px 15px 15px 30px;
   display: flex;
   flex-direction: column;
-  @media ${device.tablet} {
-  }
 `;
 
 const TagTitle = styled.h2`
@@ -163,5 +164,11 @@ const ItemTag = styled.div`
   border: solid 0.5px black;
 `;
 
-const ProjectItems = styled.div``;
+const ProjectItems = styled.div`
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`;
 export default Skills;
