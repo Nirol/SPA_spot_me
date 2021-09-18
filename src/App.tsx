@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import { mainTheme } from "./constants/cssThemes";
 import Header from "./components/Header";
 import Thesis from "./components/Thesis";
+import Skills from "./components/Skills";
 
 function App() {
   const { pathname, hash } = useLocation();
@@ -44,6 +45,10 @@ function App() {
 
         <section style={{ scrollMarginTop: "100px" }} id="projects">
           <Projects />
+        </section>
+
+        <section style={{ scrollMarginTop: "100px" }} id="skills">
+          <Skills />
         </section>
 
         <section style={{ scrollMarginTop: "100px" }} id="thesis">
