@@ -6,7 +6,11 @@ export const ProjectImageWrap = styled.div`
   max-width: 550px;
   @media ${device.tablet} {
     border: solid 1px black;
-    max-width: 400px;
+    max-width: 500px;
+  }
+  @media ${device.laptop} {
+    border: solid 1px black;
+    max-width: 600px;
   }
 `;
 

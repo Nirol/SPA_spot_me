@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import { mainTheme } from "./constants/cssThemes";
 import Header from "./components/Header";
 import Thesis from "./components/Thesis";
+import Skills from "./components/Skills";
 
 function App() {
   const { pathname, hash } = useLocation();
@@ -46,6 +47,10 @@ function App() {
           <Projects />
         </section>
 
+        <section style={{ scrollMarginTop: "100px" }} id="skills">
+          <Skills />
+        </section>
+
         <section style={{ scrollMarginTop: "100px" }} id="thesis">
           <Thesis />
         </section>
@@ -70,7 +75,7 @@ const Container = styled.div`
   scroll-behavior: smooth;
 
   background-color black;
-  background-image linear-gradient(315deg, #078763 0%, #000000 90%);
+  background-image linear-gradient(315deg, #485563 0%, #000000 90%);
 `;
 
 export default App;

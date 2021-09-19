@@ -6,7 +6,8 @@ import { ItemTitle } from "../constants/SharedStyles/Item";
 import Burger from "./Burger";
 
 const BACKGROUND = "linear-gradient(60deg, #29323c 0%, #485563 100%)";
-const TRANSPARENT_BACKGROUND = "rgba(31, 30, 30, 0.5)";
+const TRANSPARENT_BACKGROUND =
+  "linear-gradient(90deg, rgba(41,50,60,0.5) 0%, rgba(72,85,99,0.5) 100%)";
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -65,6 +66,15 @@ const Header: React.FC = () => {
                 </Link>
               </ListItem>
 
+              <ListItem>
+                <Link
+                  onClick={switchMenuState}
+                  href="#skills"
+                  linkText={"Skills"}
+                >
+                  Skills
+                </Link>
+              </ListItem>
               <ListItem>
                 <Link
                   onClick={switchMenuState}
@@ -135,7 +145,7 @@ const NavList = styled.div``;
 const LinkList = styled.ul<{ leftAttribute: string }>`
   list-style: none;
   position: absolute;
-  background: ${(props) => props.theme.gradientBackground};
+  background: ${BACKGROUND};
   width: 100vw;
   height: 100vh;
   left: ${({ leftAttribute }) => leftAttribute};
@@ -156,7 +166,7 @@ const LinkList = styled.ul<{ leftAttribute: string }>`
     display: block;
     height: auto;
     width: fit-content;
-    background-color: transparent;
+    background: transparent;
   }
 `;
 const ListItem = styled.li`
@@ -172,6 +182,7 @@ const ListItem = styled.li`
 
   @media ${device.laptop} {
     display: inline-block;
+    background: transparent;
     &:hover {
       &::after {
         display: none;

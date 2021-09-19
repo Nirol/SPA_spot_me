@@ -5,13 +5,12 @@ import {
   ItemParagraph,
   ItemSubTitle,
   ItemTitle,
-  IconImage,
 } from "../constants/SharedStyles/Item";
 import {
   ProjectImageWrap,
   ProjectImage,
 } from "../constants/SharedStyles/Images";
-import serviceImg from "../assets/images/item_backgrounds/bb1.png";
+import serviceImg from "../assets/images/item_backgrounds/crimson-grey.png";
 import { device } from "../constants/device";
 const Projects: React.FC = () => {
   return (
@@ -101,8 +100,9 @@ const ProjectItem = styled.div`
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
-  background: rgb(0,36,29);
-  background: linear-gradient(328deg, rgba(0,36,29,0.7847514005602241) 0%, rgba(1,71,57,0.8071603641456583) 47%, rgba(2,103,84,0.8015581232492998) 100%);
+  background: white;
+
+  background: linear-gradient(315deg, #000000 0%, #485563 20%);
   box-shadow: 0px 0px 10px 0px black;
   @media ${device.tablet} {
     max-height: 250px;
@@ -129,6 +129,9 @@ const ProjectInfo = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  @media ${device.tablet} {
+    flex-basis: 70%;
+  }
 `;
 
 export default Projects;
