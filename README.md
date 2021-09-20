@@ -9,7 +9,7 @@ The app focuses mainly on the design using CSS and styled components.
 
 - [Repo](https://github.com/Nirol)
 
-- [Live](https://nirol.github.io/protfolio_website)
+- [Live](https://nirol.github.io/portfolio)
 
 
 ## Screenshots
