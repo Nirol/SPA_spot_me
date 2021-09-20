@@ -6,7 +6,6 @@ import ContactInfo from "./components/ContactInfo";
 import Footer from "./components/Footer";
 import HeroPage from "./components/Hero";
 import Projects from "./components/Projects";
-import Services from "./components/Services";
 import { mainTheme } from "./constants/cssThemes";
 import Header from "./components/Header";
 import Thesis from "./components/Thesis";
@@ -38,9 +37,6 @@ function App() {
         <Header />
         <section id="hero">
           <HeroPage />
-        </section>
-        <section style={{ scrollMarginTop: "100px" }} id="services">
-          <Services />
         </section>
 
         <section style={{ scrollMarginTop: "100px" }} id="projects">
