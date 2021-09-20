@@ -26,13 +26,16 @@ const About: React.FC = () => {
           <Heading>
             Abo<HeadingSpan>u</HeadingSpan>t <HeadingSpan>me</HeadingSpan>
           </Heading>
-          <AboutSubTitle>Full Stack Developer & Data scientist</AboutSubTitle>
+          <AboutSubTitle>
+            Full Stack Developer & Aspiring Machine Learning Engineer
+          </AboutSubTitle>
           <HeadingParagraph>
             With both BSc & MSc, I have acquired strong fundamentals in Computer
-            Science. I have also got my hands dirty with multiple Data Science &
-            Machine Learning projects during my employment as Bio-informatician
-            and my Master's courses. Recently I have focused professionally on
-            Full-Stack Web Development{" "}
+            Science. I have carried out multiple Data Science & Machine Learning
+            projects during my employment as Bio-informatician and my Master's
+            courses. My entrance to the job market was as a full-stack web
+            development developer but I am striving to dive into the realm of
+            Machine Learning and Data Science professionally.
           </HeadingParagraph>
 
           <AboutCTAButton href="#" type="button">
