@@ -50,15 +50,6 @@ const Header: React.FC = () => {
               <ListItem>
                 <Link
                   onClick={switchMenuState}
-                  href="#services"
-                  linkText={"Services"}
-                >
-                  Services
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link
-                  onClick={switchMenuState}
                   href="#projects"
                   linkText={"Projects"}
                 >
