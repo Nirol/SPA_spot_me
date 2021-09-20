@@ -7,11 +7,12 @@ import {
   HeadingParagraph,
 } from "../constants/SharedStyles/Heading";
 import { ItemSubTitle } from "../constants/SharedStyles/Item";
-
+import { RESUME_ML } from "../assets/download_files_links";
 import { CTAButton } from "../constants/SharedStyles/Button";
 
 import aboutImage from "../assets/images/profile-gray.png";
 import { device } from "../constants/device";
+import { openInNewTab } from "./OpenInNewTab";
 const About: React.FC = () => {
   return (
     <React.Fragment>
@@ -38,7 +39,7 @@ const About: React.FC = () => {
             Machine Learning and Data Science professionally.
           </HeadingParagraph>
 
-          <AboutCTAButton href="#" type="button">
+          <AboutCTAButton onClick={() => openInNewTab(RESUME_ML)} type="button">
             Download CV
           </AboutCTAButton>
         </RightContent>

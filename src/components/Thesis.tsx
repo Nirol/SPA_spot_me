@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import thesisAlgo from "../assets/thesis/Thesis_algo.png";
-
+import { THESIS_SLIDES, THESIS_PDF } from "../assets/download_files_links";
 import {
   Heading,
   HeadingSpan,
@@ -13,12 +13,9 @@ import {
   ProjectImageWrap,
   ProjectImage,
 } from "../constants/SharedStyles/Images";
+import { openInNewTab } from "./OpenInNewTab";
 
 const Thesis: React.FC = () => {
-  const openInNewTab = (url: string) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
   return (
     <React.Fragment>
       <Container>
@@ -40,24 +37,14 @@ const Thesis: React.FC = () => {
           <ProjectImage src={thesisAlgo} />
         </ThesisImageWrap>
         <Bottom>
-          <ItemWithBackground
-            onClick={() =>
-              openInNewTab(
-                "https://nirol.github.io/assets/other/Thesis_SlideShow.ppsx"
-              )
-            }
-          >
-            <ThesisParagraph>
-              Tree Reconciliation Intro & Thesis Slide Show
-            </ThesisParagraph>
+          <ItemWithBackground>
+            <a download href={THESIS_SLIDES}>
+              <ThesisParagraph>
+                Tree Reconciliation Intro & Thesis Slide Show
+              </ThesisParagraph>
+            </a>
           </ItemWithBackground>
-          <ItemWithBackground
-            onClick={() =>
-              openInNewTab(
-                "https://nirol.github.io/assets/pdf/Thesis_Nir_Gilad_1.0.pdf"
-              )
-            }
-          >
+          <ItemWithBackground onClick={() => openInNewTab(THESIS_PDF)}>
             <ThesisParagraph>Thesis PDF File</ThesisParagraph>
           </ItemWithBackground>
         </Bottom>
