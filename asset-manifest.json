@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.8beb1116.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8beb1116.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e3c4f62d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e3c4f62d.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0cf40c93.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0cf40c93.js.map",
     "static/js/2.7da1b893.chunk.js": "/portfolio/static/js/2.7da1b893.chunk.js",
@@ -10,16 +10,22 @@
     "static/js/3.0082dfce.chunk.js.map": "/portfolio/static/js/3.0082dfce.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/js/2.7da1b893.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7da1b893.chunk.js.LICENSE.txt",
+    "static/media/Gaussian_Rbf_SoftSvm.d94496e6.png": "/portfolio/static/media/Gaussian_Rbf_SoftSvm.d94496e6.png",
+    "static/media/KNN_th.c47c5000.png": "/portfolio/static/media/KNN_th.c47c5000.png",
+    "static/media/Poly_Kernel_Ridge_regression_th.303782d4.png": "/portfolio/static/media/Poly_Kernel_Ridge_regression_th.303782d4.png",
     "static/media/Thesis_algo.5ce9fa50.png": "/portfolio/static/media/Thesis_algo.5ce9fa50.png",
     "static/media/address.29ce7e35.png": "/portfolio/static/media/address.29ce7e35.png",
     "static/media/b2.7d685f47.jpeg": "/portfolio/static/media/b2.7d685f47.jpeg",
-    "static/media/crimson-grey.97a0138d.png": "/portfolio/static/media/crimson-grey.97a0138d.png",
+    "static/media/california_housing.07f86c7d.jpeg": "/portfolio/static/media/california_housing.07f86c7d.jpeg",
+    "static/media/cgmlst_th.90e60a6a.png": "/portfolio/static/media/cgmlst_th.90e60a6a.png",
+    "static/media/elections.17c6e409.png": "/portfolio/static/media/elections.17c6e409.png",
     "static/media/profile-gray.ea96258a.png": "/portfolio/static/media/profile-gray.ea96258a.png",
+    "static/media/softSVM.fd5f22b6.png": "/portfolio/static/media/softSVM.fd5f22b6.png",
     "static/media/telephone.0276fa51.png": "/portfolio/static/media/telephone.0276fa51.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0cf40c93.js",
     "static/js/2.7da1b893.chunk.js",
-    "static/js/main.8beb1116.chunk.js"
+    "static/js/main.e3c4f62d.chunk.js"
   ]
 }
