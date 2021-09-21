@@ -17,7 +17,10 @@ import G_RBF_SOFT_SVM from "../assets/images/project_images/ml_implementation/Ga
 import POLY_KERNEL_RIG_REGRESSION from "../assets/images/project_images/ml_implementation/Poly_Kernel_Ridge_regression_th.png";
 
 // other images imports:
-import CGMLST from "../assets/images/project_images/ml_implementation/KNN_th.png";
+import CGMLST from "../assets/images/project_images/ml/cgmlst_th.png";
+import HOUSING_MARKET from "../assets/images/project_images/ml/california_housing.jpeg";
+import ELECTIONS from "../assets/images/project_images/ml/elections.png";
+
 // machine learning implementations repo imports:
 import {
   SOFT_SVM_REPO,
@@ -27,7 +30,11 @@ import {
 } from "../constants/repoLinks";
 
 // other repo imports:
-import { CGMLST_REPO } from "../constants/repoLinks";
+import {
+  CGMLST_REPO,
+  HOUSING_MARKET_REPO,
+  ELECTIONS_REPO,
+} from "../constants/repoLinks";
 const Projects: React.FC = () => {
   return (
     <React.Fragment>
@@ -35,8 +42,117 @@ const Projects: React.FC = () => {
         <Heading>
           Recent <HeadingSpan>Projects</HeadingSpan>
         </Heading>
-        <ItemTitle> Machine Learning Algorithms implementations </ItemTitle>
-        <AllProjects>
+        <ItemParagraph
+          style={{
+            fontSize: "18px",
+            textAlign: "center",
+            lineHeight: "1.5rem",
+          }}
+        >
+          <span style={{ fontWeight: 700, textDecoration: "underline" }}>
+            {" "}
+            September 21 Update:
+          </span>{" "}
+          I am in the process of adding more of my existing projects <br />
+          (mainly BE & FE) to to my webpage, also new exciting projects /
+          collaborations are underway! stay tuned :)
+        </ItemParagraph>
+        <ItemTitle style={{ marginTop: "50px" }}>
+          {" "}
+          Data Analysis & Machine Learning Projects
+        </ItemTitle>
+        <ProjectsContainer>
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>California Housing Market Prices Analysis </ItemTitle>
+
+              <ItemParagraph>
+                Exceptional In-Depth Data Analysis and Machine Learning Project
+              </ItemParagraph>
+              <ItemParagraph>
+                A vast data science project from data acquisition, exploration,
+                and cleaning, to Model picking, feature removal, and scaling.
+                <br />
+                Methods used: <br />
+                1.Inferential Statistics 2.Data Visualization <br />
+                3. Data cleaning Pipelines 4.Different ML Predictors <br />
+                5. GridSearch & RandomizeSearch Fine Tuning
+                <br /> <br />
+                Achieved a significant improvement over the hands-on machine
+                learning book chapter on this data-set and over the majority of
+                Kaggle kernels. More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(HOUSING_MARKET_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap>
+              <ProjectImage src={HOUSING_MARKET} />
+            </ProjectImageWrap>
+          </ProjectItem>
+
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>Completing Missing Core Genes Alleles </ItemTitle>
+
+              <ItemParagraph>
+                This project target is to find a machine learning model that
+                predicts the missing alleles of a single core gene based on all
+                other core genes data in the bacteria CGMLST scheme.
+              </ItemParagraph>
+              <ItemParagraph>
+                Including Data Gathering & Filtering, Data Cleaning, and
+                multiple models being texted, including cross validation.
+                <br />
+                More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(ELECTIONS_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap onClick={() => openInNewTab(CGMLST)}>
+              <ProjectImage src={CGMLST} />
+            </ProjectImageWrap>
+          </ProjectItem>
+
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>
+                The 22 Knesset Election Results Data Exploration{" "}
+              </ItemTitle>
+
+              <ItemParagraph>
+                Analyzing the 22 knesset elections public results.
+              </ItemParagraph>
+              <ItemParagraph>
+                This project Data Cleaning process turns out to be quite
+                difficult because of the hebrew texts involved.
+                <br />
+                Methods Used:
+                <br />
+                1. Data Cleaning:
+                <br />
+                2.Inferential Statistics
+                <br />
+                3.Data Visualization
+                <br />
+                <br />
+                More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(CGMLST_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap onClick={() => openInNewTab(ELECTIONS)}>
+              <ProjectImage src={ELECTIONS} />
+            </ProjectImageWrap>
+          </ProjectItem>
+        </ProjectsContainer>
+        <ItemTitle style={{ marginTop: "50px" }}>
+          {" "}
+          Machine Learning Algorithms implementations{" "}
+        </ItemTitle>
+        <ProjectsContainer>
           <ProjectItem>
             <ProjectInfo>
               <ItemTitle>Soft SVM</ItemTitle>
@@ -55,7 +171,7 @@ const Projects: React.FC = () => {
                 </ProjectLink>
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap onClick={() => openInNewTab(softSVM)}>
+            <ProjectImageWrap>
               <ProjectImage src={softSVM} />
             </ProjectImageWrap>
           </ProjectItem>
@@ -127,27 +243,7 @@ const Projects: React.FC = () => {
               <ProjectImage src={POLY_KERNEL_RIG_REGRESSION} />
             </ProjectImageWrap>
           </ProjectItem>
-        </AllProjects>
-
-        <ItemTitle> Data Science Analysis </ItemTitle>
-        <AllProjects>
-          <ProjectItem>
-            <ProjectInfo>
-              <ItemTitle>K-Nearest-Neighbors</ItemTitle>
-
-              <ItemParagraph>Algorithm implementation in Matlab.</ItemParagraph>
-              <ItemParagraph>
-                More details in the{" "}
-                <ProjectLink onClick={() => openInNewTab(CGMLST_REPO)}>
-                  Repository{" "}
-                </ProjectLink>
-              </ItemParagraph>
-            </ProjectInfo>
-            <ProjectImageWrap onClick={() => openInNewTab(CGMLST)}>
-              <ProjectImage src={CGMLST} />
-            </ProjectImageWrap>
-          </ProjectItem>
-        </AllProjects>
+        </ProjectsContainer>
       </Container>
     </React.Fragment>
   );
@@ -167,7 +263,7 @@ const Container = styled.div`
   margin-top: 50px;
 `;
 
-const AllProjects = styled.div`
+const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +284,7 @@ const ProjectItem = styled.div`
   background: linear-gradient(315deg, #000000 0%, #485563 20%);
   box-shadow: 0px 0px 10px 0px black;
   @media ${device.tablet} {
-    max-height: 250px;
+    max-height: 650px;
     margin 0;
     width: 95%;
     border-radius: 0;
@@ -200,7 +296,7 @@ const ProjectItem = styled.div`
     }
   }
   @media ${device.laptop} {
-    max-height: 300px;
+  
     margin: 0 auto;      
   }
 `;

@@ -10,6 +10,12 @@ export const G_RBF_SOFT_SVM_REPO =
 
 export const POLY_KERNEL_RIG_REGRESSION_REPO =
   "https://github.com/Nirol/machine_learning/tree/master/poly_kernel_ridge_regression";
-// other:
+
+// ML & DS Projects:
+
+export const HOUSING_MARKET_REPO =
+  "https://github.com/Nirol/machine_learning/tree/master/core_genes_completion";
 export const CGMLST_REPO =
   "https://github.com/Nirol/machine_learning/tree/master/core_genes_completion";
+
+export const ELECTIONS_REPO = "https://github.com/Nirol/elections_data";
