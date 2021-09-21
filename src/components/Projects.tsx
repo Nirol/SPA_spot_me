@@ -1,17 +1,40 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../constants/device";
+import { openInNewTab } from "./OpenInNewTab";
 import { Heading, HeadingSpan } from "../constants/SharedStyles/Heading";
-import {
-  ItemParagraph,
-  ItemSubTitle,
-  ItemTitle,
-} from "../constants/SharedStyles/Item";
+import { ItemParagraph, ItemTitle } from "../constants/SharedStyles/Item";
 import {
   ProjectImageWrap,
   ProjectImage,
 } from "../constants/SharedStyles/Images";
-import serviceImg from "../assets/images/item_backgrounds/crimson-grey.png";
-import { device } from "../constants/device";
+
+// machine learning implementations images imports:
+import softSVM from "../assets/images/project_images/ml_implementation/softSVM.png";
+import KNN from "../assets/images/project_images/ml_implementation/KNN_th.png";
+import G_RBF_SOFT_SVM from "../assets/images/project_images/ml_implementation/Gaussian_Rbf_SoftSvm.png";
+
+import POLY_KERNEL_RIG_REGRESSION from "../assets/images/project_images/ml_implementation/Poly_Kernel_Ridge_regression_th.png";
+
+// other images imports:
+import CGMLST from "../assets/images/project_images/ml/cgmlst_th.png";
+import HOUSING_MARKET from "../assets/images/project_images/ml/california_housing.jpeg";
+import ELECTIONS from "../assets/images/project_images/ml/elections.png";
+
+// machine learning implementations repo imports:
+import {
+  SOFT_SVM_REPO,
+  KNN_REPO,
+  G_RBF_SOFT_SVM_REPO,
+  POLY_KERNEL_RIG_REGRESSION_REPO,
+} from "../constants/repoLinks";
+
+// other repo imports:
+import {
+  CGMLST_REPO,
+  HOUSING_MARKET_REPO,
+  ELECTIONS_REPO,
+} from "../constants/repoLinks";
 const Projects: React.FC = () => {
   return (
     <React.Fragment>
@@ -19,52 +42,208 @@ const Projects: React.FC = () => {
         <Heading>
           Recent <HeadingSpan>Projects</HeadingSpan>
         </Heading>
-        <AllProjects>
+        <ItemParagraph
+          style={{
+            fontSize: "18px",
+            textAlign: "center",
+            lineHeight: "1.5rem",
+          }}
+        >
+          <span style={{ fontWeight: 700, textDecoration: "underline" }}>
+            {" "}
+            September 21 Update:
+          </span>{" "}
+          I am in the process of adding more of my existing projects <br />
+          (mainly BE & FE) to to my webpage, also new exciting projects /
+          collaborations are underway! stay tuned :)
+        </ItemParagraph>
+        <ItemTitle style={{ marginTop: "50px" }}>
+          {" "}
+          Data Analysis & Machine Learning Projects
+        </ItemTitle>
+        <ProjectsContainer>
           <ProjectItem>
             <ProjectInfo>
-              <ItemTitle>Project 1</ItemTitle>
-              <ItemSubTitle>Coding is Love</ItemSubTitle>
+              <ItemTitle>California Housing Market Prices Analysis </ItemTitle>
+
               <ItemParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco
+                Exceptional In-Depth Data Analysis and Machine Learning Project
+              </ItemParagraph>
+              <ItemParagraph>
+                A vast data science project from data acquisition, exploration,
+                and cleaning, to Model picking, feature removal, and scaling.
+                <br />
+                Methods used: <br />
+                1.Inferential Statistics 2.Data Visualization <br />
+                3. Data cleaning Pipelines 4.Different ML Predictors <br />
+                5. GridSearch & RandomizeSearch Fine Tuning
+                <br /> <br />
+                Achieved a significant improvement over the hands-on machine
+                learning book chapter on this data-set and over the majority of
+                Kaggle kernels. More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(HOUSING_MARKET_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
               </ItemParagraph>
             </ProjectInfo>
             <ProjectImageWrap>
-              <ProjectImage src={serviceImg} />
+              <ProjectImage src={HOUSING_MARKET} />
             </ProjectImageWrap>
           </ProjectItem>
 
           <ProjectItem>
             <ProjectInfo>
-              <ItemTitle>Project 2</ItemTitle>
-              <ItemSubTitle>dddd</ItemSubTitle>
+              <ItemTitle>Completing Missing Core Genes Alleles </ItemTitle>
+
               <ItemParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco
+                This project target is to find a machine learning model that
+                predicts the missing alleles of a single core gene based on all
+                other core genes data in the bacteria CGMLST scheme.
+              </ItemParagraph>
+              <ItemParagraph>
+                Including Data Gathering & Filtering, Data Cleaning, and
+                multiple models being texted, including cross validation.
+                <br />
+                More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(ELECTIONS_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
               </ItemParagraph>
             </ProjectInfo>
-            <ProjectImageWrap>
-              <ProjectImage src={serviceImg} />
+            <ProjectImageWrap onClick={() => openInNewTab(CGMLST)}>
+              <ProjectImage src={CGMLST} />
             </ProjectImageWrap>
           </ProjectItem>
 
           <ProjectItem>
             <ProjectInfo>
-              <ItemTitle>Project 3</ItemTitle>
-              <ItemSubTitle>ggg</ItemSubTitle>
+              <ItemTitle>
+                The 22 Knesset Election Results Data Exploration{" "}
+              </ItemTitle>
+
               <ItemParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco
+                Analyzing the 22 knesset elections public results.
+              </ItemParagraph>
+              <ItemParagraph>
+                This project Data Cleaning process turns out to be quite
+                difficult because of the hebrew texts involved.
+                <br />
+                Methods Used:
+                <br />
+                1. Data Cleaning:
+                <br />
+                2.Inferential Statistics
+                <br />
+                3.Data Visualization
+                <br />
+                <br />
+                More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(CGMLST_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap onClick={() => openInNewTab(ELECTIONS)}>
+              <ProjectImage src={ELECTIONS} />
+            </ProjectImageWrap>
+          </ProjectItem>
+        </ProjectsContainer>
+        <ItemTitle style={{ marginTop: "50px" }}>
+          {" "}
+          Machine Learning Algorithms implementations{" "}
+        </ItemTitle>
+        <ProjectsContainer>
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>Soft SVM</ItemTitle>
+
+              <ItemParagraph>
+                Algorithm implementation as a quadratic programming
+              </ItemParagraph>
+              <ItemParagraph>
+                The project includes testing the classifier performance on
+                different lambda (the parameter λ of the soft SVM algorithm),
+                <br />
+                and Picturization of a low error classifier. values. More
+                details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(SOFT_SVM_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
               </ItemParagraph>
             </ProjectInfo>
             <ProjectImageWrap>
-              <ProjectImage src={serviceImg} />
+              <ProjectImage src={softSVM} />
             </ProjectImageWrap>
           </ProjectItem>
-        </AllProjects>
+
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>K-Nearest-Neighbors</ItemTitle>
+              <ItemParagraph>
+                Algorithm implementation in Matlab.
+                <br />
+                More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(KNN_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap onClick={() => openInNewTab(KNN)}>
+              <ProjectImage src={KNN} />
+            </ProjectImageWrap>
+          </ProjectItem>
+
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>Gaussian RBF Kernel Soft Svm</ItemTitle>
+              <ItemParagraph>
+                {" "}
+                Algorithm implementation as a quadratic programming
+              </ItemParagraph>
+              <ItemParagraph>
+                The algorithm takes two tweaking parameters: <br />
+                1. lambda - the parameter λ of the soft SVM algorithm. <br />
+                2. sigma - the bandwidth parameter σ of the RBF kernel <br />
+                The project includes cross-validation of the parameters as well.
+                More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(G_RBF_SOFT_SVM_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap onClick={() => openInNewTab(G_RBF_SOFT_SVM)}>
+              <ProjectImage src={G_RBF_SOFT_SVM} />
+            </ProjectImageWrap>
+          </ProjectItem>
+
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>Polynomial Kernel Ridge Regression</ItemTitle>
+              <ItemParagraph>
+                {" "}
+                Algorithm implementation as a quadratic programming
+              </ItemParagraph>
+              <ItemParagraph>
+                The algorithm takes two tweaking parameters: <br />
+                1. lambda - the parameter λ of the kernel ridge regression
+                algorithm. <br /> 2.n - the order n ∈ (0, 1, 2, {". . ."}) of
+                the polynomial kernel. <br />
+                The project includes cross-validation of the parameters as well.
+                More details in the{" "}
+                <ProjectLink
+                  onClick={() => openInNewTab(POLY_KERNEL_RIG_REGRESSION_REPO)}
+                >
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap
+              onClick={() => openInNewTab(POLY_KERNEL_RIG_REGRESSION)}
+            >
+              <ProjectImage src={POLY_KERNEL_RIG_REGRESSION} />
+            </ProjectImageWrap>
+          </ProjectItem>
+        </ProjectsContainer>
       </Container>
     </React.Fragment>
   );
@@ -84,7 +263,7 @@ const Container = styled.div`
   margin-top: 50px;
 `;
 
-const AllProjects = styled.div`
+const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +284,7 @@ const ProjectItem = styled.div`
   background: linear-gradient(315deg, #000000 0%, #485563 20%);
   box-shadow: 0px 0px 10px 0px black;
   @media ${device.tablet} {
-    max-height: 250px;
+    max-height: 650px;
     margin 0;
     width: 95%;
     border-radius: 0;
@@ -117,7 +296,7 @@ const ProjectItem = styled.div`
     }
   }
   @media ${device.laptop} {
-    max-height: 300px;
+  
     margin: 0 auto;      
   }
 `;
@@ -132,6 +311,12 @@ const ProjectInfo = styled.div`
   @media ${device.tablet} {
     flex-basis: 70%;
   }
+`;
+
+const ProjectLink = styled(ItemParagraph)`
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
 `;
 
 export default Projects;
