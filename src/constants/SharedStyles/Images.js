@@ -4,6 +4,7 @@ export const ProjectImageWrap = styled.div`
   width: 100%;
   min-height: 100px;
   max-width: 550px;
+  cursor: pointer;
   @media ${device.tablet} {
     border: solid 1px black;
     max-width: 500px;
