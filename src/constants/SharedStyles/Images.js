@@ -3,7 +3,8 @@ import { device } from "../device";
 export const ProjectImageWrap = styled.div`
   width: 100%;
   min-height: 100px;
-  max-width: 550px;
+  max-width: 350px;
+  max-height:400px
   cursor: pointer;
   @media ${device.tablet} {
     border: solid 1px black;
@@ -17,7 +18,7 @@ export const ProjectImageWrap = styled.div`
 
 export const ProjectImage = styled.img`
   width: 100%;
-
+  max-height: 400px;
   object-fit: contain;
   &::after {
     content: "";

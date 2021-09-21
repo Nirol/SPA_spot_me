@@ -34,7 +34,7 @@ const Thesis: React.FC = () => {
             )
           }
         >
-          <ProjectImage src={thesisAlgo} />
+          <ProjectImage style={{ maxHeight: "700px" }} src={thesisAlgo} />
         </ThesisImageWrap>
         <Bottom>
           <ItemWithBackground>
@@ -111,6 +111,8 @@ const ItemWithBackground = styled(Item)`
 `;
 
 const ThesisImageWrap = styled(ProjectImageWrap)`
+  max-width: 700px;
+  max-height: 700px;
   cursor: pointer;
 `;
 export default Thesis;
