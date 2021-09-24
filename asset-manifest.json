@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.cd25f37e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cd25f37e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.2abdc35a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2abdc35a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0cf40c93.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0cf40c93.js.map",
     "static/js/2.7da1b893.chunk.js": "/portfolio/static/js/2.7da1b893.chunk.js",
@@ -12,6 +12,7 @@
     "static/js/2.7da1b893.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7da1b893.chunk.js.LICENSE.txt",
     "static/media/Gaussian_Rbf_SoftSvm.d94496e6.png": "/portfolio/static/media/Gaussian_Rbf_SoftSvm.d94496e6.png",
     "static/media/KNN_th.c47c5000.png": "/portfolio/static/media/KNN_th.c47c5000.png",
+    "static/media/NRGene.d8ede61c.png": "/portfolio/static/media/NRGene.d8ede61c.png",
     "static/media/Poly_Kernel_Ridge_regression_th.303782d4.png": "/portfolio/static/media/Poly_Kernel_Ridge_regression_th.303782d4.png",
     "static/media/Thesis_algo.5ce9fa50.png": "/portfolio/static/media/Thesis_algo.5ce9fa50.png",
     "static/media/address.29ce7e35.png": "/portfolio/static/media/address.29ce7e35.png",
@@ -26,6 +27,6 @@
   "entrypoints": [
     "static/js/runtime-main.0cf40c93.js",
     "static/js/2.7da1b893.chunk.js",
-    "static/js/main.cd25f37e.chunk.js"
+    "static/js/main.2abdc35a.chunk.js"
   ]
 }
