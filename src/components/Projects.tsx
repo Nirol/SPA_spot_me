@@ -334,7 +334,7 @@ const ProjectItem = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 95%;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;

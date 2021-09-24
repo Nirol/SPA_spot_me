@@ -51,10 +51,10 @@ const Skills: React.FC = () => {
                   <ItemTag>Typescript</ItemTag>
 
                   <ItemTag>CSS</ItemTag>
-                  <ItemTag>HTML</ItemTag>
                 </TagsRow>
                 <TagsRow>
                   <ItemTag>Javascript</ItemTag>
+                  <ItemTag>HTML</ItemTag>
                 </TagsRow>
               </ProjectInfo>
             </ProjectItem>
@@ -115,7 +115,7 @@ const ProjectItem = styled.div`
   box-shadow: 0px 0px 18px 0px black;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 82%;
   margin: 20px auto;
 
   background: linear-gradient(315deg, #000000 0%, #485563 20%);
@@ -128,6 +128,7 @@ const ProjectItem = styled.div`
     height: 100%;
     min-height: 150px;
     max-width: 300px;
+    width: 90%;
   }
 `;
 const ProjectInfo = styled.div`

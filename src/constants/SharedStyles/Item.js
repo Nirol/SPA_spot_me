@@ -1,15 +1,19 @@
 import styled from "styled-components";
 import { device } from "../device";
 export const ItemTitle = styled.div`
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: ${(props) => props.theme.mainTextBrightColor};
   margin-bottom: 10px;
   text-transform: uppercase;
+  @media ${device.tablet} {
+    font-size: 2rem;
+  }
 `;
 
 export const ItemParagraph = styled.p`
   color: ${(props) => props.theme.mainTextBrightColor};
   text-align: left;
+  padding: 0;
 `;
 
 export const ItemSubTitle = styled.div`

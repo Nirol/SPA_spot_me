@@ -102,7 +102,7 @@ const ContactItem = styled.div`
   box-shadow: 0px 0px 18px 0px black;
   flex-direction: column;
   text-align: center;
-  width: 60%;
+  width: 90%;
   justify-content: center;
   align-items: center;
   &:hover {

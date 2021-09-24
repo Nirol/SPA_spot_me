@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "../device";
 export const Heading = styled.div`
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weigh: 300;
   color: ${(props) => props.theme.mainTextDarkColor};
   margin-bottom: 10px;

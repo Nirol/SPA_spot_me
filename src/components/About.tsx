@@ -121,6 +121,8 @@ const RightContent = styled.div`
 const AboutCTAButton = styled(CTAButton)`
   color: ${(props) => props.theme.mainTextDarkColor};
   margin-bottom: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 10px 20px;
   font-size: 2rem;
 `;
