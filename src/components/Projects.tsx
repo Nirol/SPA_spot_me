@@ -279,7 +279,7 @@ const Projects: React.FC = () => {
           {" "}
           Full Stack Projects{" "}
         </ItemTitle>
-        <ProjectsContainer>
+        {/* <ProjectsContainer>
           <ProjectItem>
             <ProjectInfo>
               <ItemTitle>Soft SVM</ItemTitle>
@@ -302,7 +302,7 @@ const Projects: React.FC = () => {
               <ProjectImage src={softSVM} />
             </ProjectImageWrap>
           </ProjectItem>
-        </ProjectsContainer>
+        </ProjectsContainer> */}
       </Container>
     </React.Fragment>
   );
