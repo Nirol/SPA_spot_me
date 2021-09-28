@@ -109,6 +109,8 @@ const ItemWithBackground = styled(Item)`
 `;
 
 const ThesisImageWrap = styled(ProjectImageWrap)`
+  max-width: 700px;
+  max-height: 700px;
   cursor: pointer;
 `;
 export default Thesis;
