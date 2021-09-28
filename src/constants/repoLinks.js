@@ -19,3 +19,5 @@ export const CGMLST_REPO =
   "https://github.com/Nirol/machine_learning/tree/master/core_genes_completion";
 
 export const ELECTIONS_REPO = "https://github.com/Nirol/elections_data";
+
+export const NRGENE_REPO ="https://github.com/Nirol/NRGene";

@@ -20,7 +20,7 @@ import POLY_KERNEL_RIG_REGRESSION from "../assets/images/project_images/ml_imple
 import CGMLST from "../assets/images/project_images/ml/cgmlst_th.png";
 import HOUSING_MARKET from "../assets/images/project_images/ml/california_housing.jpeg";
 import ELECTIONS from "../assets/images/project_images/ml/elections.png";
-
+import NRGENE from "../assets/images/project_images/ml/NRGene.png";
 // machine learning implementations repo imports:
 import {
   SOFT_SVM_REPO,
@@ -34,6 +34,7 @@ import {
   CGMLST_REPO,
   HOUSING_MARKET_REPO,
   ELECTIONS_REPO,
+  NRGENE_REPO,
 } from "../constants/repoLinks";
 const Projects: React.FC = () => {
   return (
@@ -105,7 +106,7 @@ const Projects: React.FC = () => {
                 multiple models being texted, including cross validation.
                 <br />
                 More details in the{" "}
-                <ProjectLink onClick={() => openInNewTab(ELECTIONS_REPO)}>
+                <ProjectLink onClick={() => openInNewTab(CGMLST_REPO)}>
                   Repository{" "}
                 </ProjectLink>
               </ItemParagraph>
@@ -138,13 +139,42 @@ const Projects: React.FC = () => {
                 <br />
                 <br />
                 More details in the{" "}
-                <ProjectLink onClick={() => openInNewTab(CGMLST_REPO)}>
+                <ProjectLink onClick={() => openInNewTab(ELECTIONS_REPO)}>
                   Repository{" "}
                 </ProjectLink>
               </ItemParagraph>
             </ProjectInfo>
             <ProjectImageWrap onClick={() => openInNewTab(ELECTIONS)}>
               <ProjectImage src={ELECTIONS} />
+            </ProjectImageWrap>
+          </ProjectItem>
+
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>Genes data science project </ItemTitle>
+
+              <ItemParagraph>
+                In-Depth solution to NRgene gene data exploration assignment
+              </ItemParagraph>
+              <ItemParagraph>
+                In this work I showcased python clean & high quality code.
+                <br />
+                I have also took advantage of pandas, NumPy, and Matplotlib
+                libraries advanced capabilities.
+                <br />
+                Lastly, The project include detailed read me files for each part
+                the work with high attention to details and to the assignment
+                requests.
+                <br />
+                <br />
+                More details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(NRGENE_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap onClick={() => openInNewTab(NRGENE)}>
+              <ProjectImage src={NRGENE} />
             </ProjectImageWrap>
           </ProjectItem>
         </ProjectsContainer>
@@ -244,6 +274,35 @@ const Projects: React.FC = () => {
             </ProjectImageWrap>
           </ProjectItem>
         </ProjectsContainer>
+
+        <ItemTitle style={{ marginTop: "50px" }}>
+          {" "}
+          Full Stack Projects{" "}
+        </ItemTitle>
+        {/* <ProjectsContainer>
+          <ProjectItem>
+            <ProjectInfo>
+              <ItemTitle>Soft SVM</ItemTitle>
+
+              <ItemParagraph>
+                Algorithm implementation as a quadratic programming
+              </ItemParagraph>
+              <ItemParagraph>
+                The project includes testing the classifier performance on
+                different lambda (the parameter λ of the soft SVM algorithm),
+                <br />
+                and Picturization of a low error classifier. values. More
+                details in the{" "}
+                <ProjectLink onClick={() => openInNewTab(SOFT_SVM_REPO)}>
+                  Repository{" "}
+                </ProjectLink>
+              </ItemParagraph>
+            </ProjectInfo>
+            <ProjectImageWrap>
+              <ProjectImage src={softSVM} />
+            </ProjectImageWrap>
+          </ProjectItem>
+        </ProjectsContainer> */}
       </Container>
     </React.Fragment>
   );
