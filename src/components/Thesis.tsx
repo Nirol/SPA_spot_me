@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import thesisAlgo from "../assets/thesis/Thesis_algo.png";
-import { THESIS_SLIDES, THESIS_PDF } from "../assets/download_files_links";
+import {
+  THESIS_SLIDES,
+  THESIS_PDF,
+  THESIS_ALGO,
+} from "../assets/download_files_links";
 import {
   Heading,
   HeadingSpan,
@@ -27,14 +31,8 @@ const Thesis: React.FC = () => {
             Gene Tree Reconciliation Algorithm Suited For Tandem Paralogs
           </HeadingParagraph>
         </Top>
-        <ThesisImageWrap
-          onClick={() =>
-            openInNewTab(
-              "https://nirol.github.io/assets/images/thesis/algorithm_workflow.PNG"
-            )
-          }
-        >
-          <ProjectImage style={{ maxHeight: "700px" }} src={thesisAlgo} />
+        <ThesisImageWrap onClick={() => openInNewTab(THESIS_ALGO)}>
+          <ProjectImage src={thesisAlgo} />
         </ThesisImageWrap>
         <Bottom>
           <ItemWithBackground>

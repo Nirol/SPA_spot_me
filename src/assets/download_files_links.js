@@ -1,6 +1,8 @@
 export const THESIS_SLIDES =
   "https://github.com/Nirol/portfolio/raw/main/src/assets/thesis/Thesis_SlideShow.ppsx";
 
+export const THESIS_ALGO =
+  "https://github.com/Nirol/portfolio/raw/main/src/assets/thesis/Thesis_algo.png";
 export const THESIS_PDF = "to_complete";
 
 export const RESUME_ML =
